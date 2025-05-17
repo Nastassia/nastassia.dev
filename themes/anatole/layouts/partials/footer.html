@@ -1,0 +1,2 @@
+{{- if and (hugo.IsProduction) (.Site.Params.gtagId) -}} {{ partial
+"google-analytics-gtag-async.html" . }} {{- end -}}

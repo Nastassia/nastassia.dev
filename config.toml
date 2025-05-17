@@ -1,0 +1,68 @@
+baseURL = "https://nastassia.dev"
+languageCode = "en"
+DefaultContentLanguage = "en"
+title = "Nastassia.dev"
+theme = "anatole"
+summarylength = 25
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
+gtagId = ""
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
+
+[markup]
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ''
+hl_inline = false
+lineAnchors = ''
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = true
+noClasses = true
+noHl = false
+style = 'onedark'
+tabWidth = 2
+
+[params]
+googleAnalytics = ""
+gtagId = ""
+title = "Nastassia.dev"
+author = "Nastassia"
+copyright = "2025"
+description = "Autodidact Technologist"
+profilePicture = "/asha.png"
+keywords = "Systems Engineering"
+favicon = "/"
+customCss = []
+customJs = []
+mainSections = ["post"]
+doNotLoadAnimations = false
+displayMode = "light"
+
+## Social links
+[[params.socialIcons]]
+title = "github"
+url = "https://github.com/Nastassia"
+
+[[params.socialIcons]]
+title = "linkedin"
+url = "https://www.linkedin.com/in/nastassiacarmona/"
+
+## Menu items
+[menu]
+
+[[menu.main]]
+name = "Blog"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Now"
+url = "/now/"
+weight = 1
