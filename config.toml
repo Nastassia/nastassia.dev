@@ -1,4 +1,4 @@
-baseURL = "https://nastassia.dev"
+baseURL = "/"
 languageCode = "en"
 DefaultContentLanguage = "en"
 title = "Nastassia.dev"
@@ -37,6 +37,7 @@ author = "Nastassia"
 copyright = "2025"
 description = "Autodidact Technologist"
 profilePicture = "asha.png"
+energyBatt = "redbull-charge.gif"
 keywords = "Systems Engineering"
 favicon = "/"
 customCss = []
