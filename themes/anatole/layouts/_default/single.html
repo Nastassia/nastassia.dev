@@ -1,14 +1,8 @@
 {{ define "main" }}
-<div
-    class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}"
->
+<div class="post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
     <div class="post-content">
         {{ if .Params.thumbnail }}
-        <img
-            class="post-thumbnail"
-            src="{{ .Params.thumbnail | relURL }}"
-            alt="Thumbnail image"
-        />
+        <img class="post-thumbnail" src="{{ .Params.thumbnail | relURL }}" alt="Thumbnail image" />
         {{ end }}
         <div class="post-title">
             <h1>{{ .Title }}</h1>
@@ -16,25 +10,18 @@
             }}
             <div class="info">
                 <span>📅</span>
-                <span class="date"
-                    >{{ if isset .Site.Params "singledateformat" }} {{
+                <span class="date">{{ if isset .Site.Params "singledateformat" }} {{
                     .Date.Format .Site.Params.singleDateFormat }} {{ else }}
-                    {{.Date.Format "Mon, Jan 2, 2006"}} {{ end }}</span
-                >
+                    {{.Date.Format "Mon, Jan 2, 2006"}} {{ end }}</span>
                 <span>⏱️</span>
-                <span class="reading-time"
-                    >{{ i18n "reading_time" .ReadingTime }}</span
-                >
+                <span class="reading-time">{{ i18n "reading_time" .ReadingTime }}</span>
             </div>
             {{ end }}
         </div>
 
         {{ .Content }} {{- if (eq .Params.contact true) -}} {{- partial
         "contact.html" . -}} {{- end -}}
-		  	<h3>Feedback</h3>
-				<p>
-				As always, please <a href="https://x.com/pliutau">reach out to me on X</a> with questions, corrections, or ideas!
-				</p>
+
     </div>
     <div class="post-footer">
         <div class="info">

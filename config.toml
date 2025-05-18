@@ -59,10 +59,10 @@ url = "https://www.linkedin.com/in/nastassiacarmona/"
 
 [[menu.main]]
 name = "Blog"
-url = "/"
+url = "/post/"
 weight = 1
 
 [[menu.main]]
-name = "Now"
-url = "/now/"
-weight = 1
+name = "About"
+url = "/about/"
+weight = 2
