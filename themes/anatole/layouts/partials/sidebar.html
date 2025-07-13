@@ -23,7 +23,7 @@
         {{ end }}
     </ul>
     <div class="energy">
-        <img src="{{ .Site.Params.energyBatt }}" alt="energy-battery" />
+        <img src="{{ .Site.Params.energyBatt | relURL }}" alt="energy-battery" />
     </div>
     <div class="footer">
         <div class="by_farbox">
